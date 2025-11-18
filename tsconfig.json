@@ -1,6 +1,4 @@
 {
-  "files": [],
-  "references": [],
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -22,11 +20,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Ajout des alias + baseUrl */
+    /* Path mapping */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
