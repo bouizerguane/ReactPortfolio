@@ -1,0 +1,76 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Polices principales */
+html {
+  font-family: "Inter", system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Satoshi", "Inter", sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Nouveau thème élégant 2025 */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --primary: 221 83% 53%; /* Bleu profond élégant */
+    --primary-foreground: 0 0% 100%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --border: 240 5.9% 90%;
+    --radius: 1.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --primary: 217 91% 60%; /* Bleu électrique en dark */
+    --primary-foreground: 240 10% 3.9%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --border: 240 3.7% 15.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-size: 1.125rem; /* texte un peu plus grand globalement */
+    line-height: 1.7;
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter;
+  }
+  h2 {
+    @apply text-4xl md:text-6xl font-bold tracking-tight;
+  }
+  h3 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+}
+
+/* Scroll & sélection */
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: rgb(var(--primary));
+  color: white;
+}

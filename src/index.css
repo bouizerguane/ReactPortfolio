@@ -1,0 +1,102 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Polices + taille de base responsive */
+html {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 16px; /* Base */
+  line-height: 1.8;
+}
+
+/* Taille de texte qui s'adapte à l'écran */
+@layer base {
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+  h3 {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+  }
+  p {
+    @apply text-base sm:text-lg md:text-xl;
+  }
+}
+
+/* Titres en Satoshi */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Satoshi", "Inter", sans-serif;
+  letter-spacing: -0.03em;
+}
+
+/* THÈME BLEU CLAIR → VERT-BLEU */
+@layer base {
+  :root {
+    --background: 210 60% 96%;
+    --foreground: 210 40% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 15%;
+    --primary: 192 85% 42%; /* Vert-bleu émeraude */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 70% 90%;
+    --muted: 200 50% 92%;
+    --muted-foreground: 200 30% 35%;
+    --border: 200 40% 88%;
+    --radius: 1.75rem;
+  }
+
+  .dark {
+    --background: 210 40% 8%;
+    --foreground: 200 50% 95%;
+    --card: 210 40% 12%;
+    --card-foreground: 200 50% 95%;
+    --primary: 192 90% 48%;
+    --primary-foreground: 210 40% 8%;
+    --muted: 210 40% 18%;
+    --muted-foreground: 200 40% 70%;
+    --border: 210 40% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Fond dégradé doux bleu-vert (light) */
+body::before {
+  content: "";
+  @apply fixed inset-0 -z-10;
+  background: linear-gradient(
+    135deg,
+    hsl(200, 70%, 94%) 0%,
+    hsl(210, 60%, 94%) 30%,
+    hsl(180, 60%, 94%) 70%,
+    hsl(190, 70%, 95%) 100%
+  );
+  opacity: 0.8;
+}
+
+/* Dark mode : fond nuit bleutée */
+.dark body::before {
+  background: linear-gradient(
+    135deg,
+    hsl(210, 50%, 8%) 0%,
+    hsl(200, 50%, 10%) 50%,
+    hsl(192, 60%, 12%) 100%
+  );
+}
