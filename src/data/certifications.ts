@@ -12,7 +12,7 @@ export const certifications: Certification[] = [
     nom: "Développement Front-End moderne avec React",
     origine: "MLIAEdu",
     annee: "2025",
-    url: "#",
+    url: "https://mliaedu.toubkalit.com/verify-certificate/26-5075dfa0-ba53-4090-b65e-3f4132c1437e-440780",
     image: "/images/certifications/react.jpg",
   },
   {
