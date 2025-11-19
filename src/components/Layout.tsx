@@ -49,7 +49,7 @@ export default function Layout() {
             onClick={closeMobileMenu}
             className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-primary/90 to-blue-600 bg-clip-text text-transparent tracking-tight"
           >
-            BOUIZERGUANE Mohamed
+            Portfolio
           </NavLink>
 
           {/* Desktop Navigation */}
