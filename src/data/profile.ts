@@ -1,9 +1,8 @@
 export const profile = {
   name: "BOUIZERGUANE Mohamed",
-  title: "Enseignant en Informatique",
+  title: "Formateur en Informatique",
   location: "Azilal, Maroc",
-  about:
-    "Enseignant en informatique, Je forme en informatique avec une pédagogie structurée.",
+  about: "Je forme en informatique avec une pédagogie structurée.",
   phone: "+212 6 61 89 03 83",
   email: "bouizerguane@gmail.com",
   socials: [

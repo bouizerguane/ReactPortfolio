@@ -8,17 +8,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Portfolio 2025",
+    title: "Gestion des Inscriptions - Application Web",
     description:
-      "Ce site que tu visites actuellement. 100 % React + Tailwind + shadcn/ui.",
-    tags: ["React", "TypeScript", "Tailwind", "shadcn/ui"],
-    github: "https://github.com/tonpseudo/portfolio",
+      "Faciliter la gestion des cours, des étudiants et des inscriptions à travers une interface web simple et intuitive.",
+    tags: [
+      "Spring",
+      "Thymeleaf",
+      "HTML5/CSS3",
+      "JavaScript/Bootstrap",
+      "MySQL",
+    ],
+    github: "https://github.com/bouizerguane/ThymleafProjet.git",
   },
   {
     title: "PFE Licence",
     description:
-      "Réalisation d\’une Application Web Gestion de Parc Informatiques et d\’Interventions avec la technologie J2EE (JSP/Servlet).",
+      "Réalisation d\’une Application Web Gestion de Parc Informatiques et d\’Interventions.",
     tags: ["Java", "JSP/Servlet", "HTML/CSS", "MySql"],
-    link: "#",
   },
 ];

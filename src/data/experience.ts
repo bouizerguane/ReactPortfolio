@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    titre: "Enseignant en Informatique",
+    titre: "Formateur en Informatique",
     organisme: "ISTA Azilal",
     periode: "2015 — 2022",
     description:
